@@ -1,7 +1,7 @@
 {
-  "name": "start-template-gulp",
+  "name": "jensin",
   "version": "1.0.0",
-  "description": "Данный шаблон сверстан по HTML5 и оптимизирован под Google PageSpeed, и содержит все что могло ускорить верстку и облегчить выполнение однообразных операций возникающий при старте любого проекта.",
+  "description": "",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -22,7 +22,6 @@
     "vinyl-ftp": "^0.6.0"
   },
   "keywords": [
-    "gulp",
     "верстка"
   ],
   "author": "Nurbol Sarsenbayev",

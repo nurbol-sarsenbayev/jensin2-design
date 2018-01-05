@@ -10,7 +10,7 @@ html, body {
 body {
 	min-width: 320px;
 	position: relative;
-	line-height: 1.75;
+	line-height: 1.2;
 	font-size: $default_font_size;
 	font-family: $default-font;
 	color: $default_text_color;
@@ -18,6 +18,268 @@ body {
 	opacity: 1;
 }
 
+
+ul {
+	font-family: Lato;
+	font-size: 18px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.accent	{
+	color: $accent;
+}
+
+.header {
+	padding: 33px 0;
+	
+	&-content {
+		display: flex;
+		align-items: center;
+	}
+
+	&-logo {
+		flex-shrink: 0;
+	}
+
+	&-list {
+		flex-grow: 1;
+		text-align: right;
+
+		li {
+			display: inline-block;
+			margin-right: 40px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.main-menu {
+	background-color: $blue;
+
+	ul {
+		display: flex;
+		height: 90px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	li {
+		text-align: center;
+	}
+
+	a {
+		color: #fff;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 500;
+		text-decoration: none;
+		
+		&:hover {
+			color: #ddd;
+		}
+	}
+}
+
+
+
+.section {
+	position: relative;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 0 60px 0;
+
+	&.silver {
+		background-color: #f4f4f4;
+	}
+
+	&-title {
+		font-family: Montserrat;
+		font-size: 32px;
+		font-weight: bold;
+		color: $accent;
+		margin-bottom: 60px;
+
+		.inverse & {
+			color: #fff;
+		}
+	}
+
+	&-main {
+		height: 780px;
+		display: flex;
+		justify-content: center;
+		flex-flow: column;
+
+		&-title {
+			font-family: MontserratAlternates;
+			font-size: 48px;
+			font-weight: normal;
+			margin-bottom: 5px;
+		}
+
+		&-subtitle {
+			font-family: MontserratAlternates;
+			font-size: 24px;
+			font-weight: 500;			
+			color: rgba(255, 255, 255, 0.651);
+			margin-bottom: 58px;
+		}
+
+		.button {
+			border-radius: 22px;
+			background-color: rgba($accent, 0.7);
+		}
+	}
+
+	&-second {
+		.section-title {
+			font-size: 42px;
+			font-weight: 500;
+		}
+
+		.list {
+			margin-bottom: 34px;
+		}
+
+		.bold {
+			margin-bottom: 43px;
+		}
+	}
+
+	&-cases {
+		background-color: $accent;
+	}
+
+	&-effective {
+		text-align: left;
+		.section-title {
+			text-align: center;
+		}
+	}
+
+	&-medicine {
+		&-title {
+			font-size: 24px;
+			font-weight: 500;
+			margin-bottom: 35px;
+		}
+
+		.bold {
+			font-weight: bold;
+			margin: 0;
+			margin-bottom: 44px;
+		}		
+	}
+
+	&-reason {
+		.reason {
+			height: 350px;
+
+			&-image {
+				background-color: $accent;
+				width: 174px;
+				height: 174px;
+				border-radius: 50%;
+				border: 8px solid rgba(255, 255, 255, 0.5);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 auto 19px auto;
+			}
+
+			&-text {
+				font-weight: 300;
+				color: $light_text_color;
+			}
+		}
+	}
+
+	&-artrit {		
+		color: $light_text_color;	
+
+		.section-content {
+			text-align: left;
+			font-weight: 500;
+
+			ol {
+				margin-left: 30px;
+			}
+		}
+
+		.bold {
+			margin: 0;
+		}
+	}
+
+	&-5000year {
+		font-weight: 500;
+		font-size: 24px;
+	}
+
+	&-question {
+		background-color: $accent;
+		background-image: url('../img/logo-alone.jpg');
+		background-position: center center;
+
+		.qa {
+			margin-bottom: 40px;
+
+			&-title {
+				margin-bottom: 20px;
+				font-style: italic;
+			}
+		}
+
+	}
+
+	&-review {
+
+		.review {
+			margin-bottom: 100px;
+			display: flex;
+			text-align: left;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&-image {
+				margin-right: 32px;
+				flex-shrink: 0;
+				width: 200px;
+			}
+
+			&-title {
+				color: $accent;
+			}
+		}
+
+	}
+
+	&-help {
+
+		&-content {
+			text-align: left;
+			color: $accent;
+		}
+	}
+
+}
+
+.carousel {
+
+	&-ekskursia {
+
+	}
+
+
+}
 
 
 @import "media"; // Всегда в конце

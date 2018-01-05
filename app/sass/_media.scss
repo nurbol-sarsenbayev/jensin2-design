@@ -4,7 +4,23 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.header-list li {
+		display: block;
+		margin: 0;
+		margin-bottom: 5px;
+		&:last-child { 
+			margin: 0;
+		}
+	}
 
+	.section {
+		&-main {
+			height: 600px;
+			&-title {
+				font-size: 45px;
+			}
+		}
+	}
 }
 	/**/
 
