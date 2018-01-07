@@ -222,20 +222,62 @@ ul {
 		font-size: 24px;
 	}
 
-	&-question {
-		background-color: $accent;
-		background-image: url('../img/logo-alone.jpg');
-		background-position: center center;
+	&-treatment {
+		color: $accent;
 
-		.qa {
-			margin-bottom: 40px;
+		.section-content {
+			position: relative;
+			margin-bottom: 44px;
+		}
 
-			&-title {
-				margin-bottom: 20px;
-				font-style: italic;
+		.treatment-step {
+			position: absolute;
+			font-weight: 300;
+			text-align: left;
+			height: 185px;
+			display: flex;
+			align-items: center;
+
+			.circle-num {
+				display: none;
+				background-color: $blue;
+				color: #fff;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				flex-shrink: 0;
+				margin-right: 15px;
+				text-align: center;
+				line-height: 50px;
+				font-weight: bold;
+			}
+
+			&:nth-child(2n+1) {
+				left: 760px;
+			}
+
+			&:nth-child(2n) {
+				right: 760px;
+			}
+
+			@for $i from 0 through 3 {
+				&:nth-child(#{($i+1)*2}) {
+					top: $i * (37px + 185px) + 111px;
+				}
+			}
+
+			@for $i from 0 through 3 {
+				&:nth-child(#{$i*2+1}) {
+					top: $i * (37px + 185px);
+				}
 			}
 		}
 
+
+
+		.bold {
+			margin-bottom: 27px;
+		}
 	}
 
 	&-review {
@@ -257,10 +299,78 @@ ul {
 
 			&-title {
 				color: $accent;
+				font-weight: bold;
+				margin-bottom: 25px;
 			}
 		}
 
 	}
+
+	&-ekskursia {
+		padding-bottom: 0;
+
+		.carousel-ekskursia {
+			position: relative;
+
+			.owl {
+				&-dots {
+					position: absolute;
+					bottom: 20px;
+					right: 0;
+					left: 0;
+					display: flex;
+					justify-content: center;
+				}
+
+				&-dot {
+					border-radius: 50%;
+					background-color: rgb(244, 244, 244);
+					width: 14px;
+					height: 14px;
+					margin: 0 3px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					
+					&.active {
+						span {
+							display: block;
+							width: 8px;
+							height: 8px;
+							border-radius: 50%;
+							background-color: $blue;
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+	&-question {
+		background-color: $accent;
+		background-image: url('../img/logo-alone.jpg');
+		background-position: center center;
+		background-size: auto;
+
+		.qa {
+			text-align: left;
+			margin-bottom: 40px;
+
+			&-title {
+				margin-bottom: 20px;
+				font-style: italic;
+			}
+		}
+
+	}
+
+	&-certificate {
+		img {
+			margin-bottom: 20px;
+		}
+	}
+
 
 	&-help {
 
@@ -273,11 +383,6 @@ ul {
 }
 
 .carousel {
-
-	&-ekskursia {
-
-	}
-
 
 }
 

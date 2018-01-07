@@ -5,8 +5,8 @@
     "Nurbol Sarsenbayev"
   ],
   "install": {
-    "path": "app/libs/",  
-    "sources": {  
+    "path": "app/libs/",
+    "sources": {
       "bootstrap-grid": [
         "bower_components/bootstrap-grid/dist/bootstrap-grid.min.css"
       ],
@@ -24,6 +24,7 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "bootstrap-grid": "^3.3.6-beta.1",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "owl.carousel": "owl-carousel2#^2.2.1"
   }
 }

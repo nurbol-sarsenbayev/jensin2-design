@@ -19,6 +19,7 @@ var gulp           = require('gulp'),
 gulp.task('main-js', function() {
     return gulp.src([
         'app/js/main.js',
+        'app/libs/owl.carousel/owl.carousel.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify()) // Минифицирует js

@@ -3,7 +3,7 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1199px) {
 	.header-list li {
 		display: block;
 		margin: 0;
@@ -20,28 +20,151 @@
 				font-size: 45px;
 			}
 		}
+
+		&-treatment {
+			.treatment-step {
+				&:nth-child(2n+1) {
+					left: 650px;
+				}
+	
+				&:nth-child(2n) {
+					right: 650px;
+				}
+			}
+		}
 	}
 }
 	/**/
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
+	.section {
+		&-treatment {
+			.treatment {
+				&-image {
+					display: none;
+				}
 
+				&-step {
+					position: static;
+					height: auto;
+					margin-bottom: 30px;
+
+					.circle-num {
+						display: block;
+					}
+
+					&:nth-child(2n+1) {
+						left: 650px;
+					}
+		
+					&:nth-child(2n) {
+						right: 650px;
+					}
+				}
+			}
+		}
+	}
+
+	.owl-carousel {
+		.owl {	
+			&-prev {
+				left: 50px;
+			}
+	
+			&-next {
+				right: 50px;
+			}
+		}
+	}
+	
 }
 	/**/
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
 
+	.section {
+		&-review {
+			.review {
+				display: block;
+
+				&-image {
+					float: left;
+				}
+				
+				&:after {
+					display: block;
+					content: '';
+					clear: both;
+				}
+			}
+		}
+	}
+
+	.owl-carousel {
+		.owl {	
+			&-prev, &-next {
+				transform: scale(0.5);
+			}	
+
+			&-dot {
+				transform: scale(0.7);
+			}
+
+			&-prev {
+				left: 10px;
+			}
+
+			&-next {
+				right: 10px;
+			}
+		}
+	}
 }
 	/**/
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 479px) {
+	.col-xxs-12 {
+		width: 100%;
+	}
 
+	.section {
+		&-reason {
+			.reason {
+				height: auto;
+				margin-bottom: 30px;
+			}
+		}
+
+		&-artrit {
+			.section-content ol {
+				margin-left: 0px;
+			}
+		}
+
+		&-review {
+			.review {
+
+				&-image {
+					float: none;
+					width: 100%;
+					text-align: center;
+					margin-bottom: 20px;
+				}
+				
+				&:after {
+					display: block;
+					content: '';
+					clear: both;
+				}
+			}
+		}
+	}
 }
 	/**/
 
