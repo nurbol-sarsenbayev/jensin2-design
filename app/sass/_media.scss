@@ -19,7 +19,7 @@
 			&-title {
 				font-size: 45px;
 			}
-		}
+		}		
 
 		&-treatment {
 			.treatment-step {
@@ -39,6 +39,49 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+
+	.page-wrapper {
+		padding-top: 78.13px;
+	}
+
+	.header {
+		padding: 10px 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 98;
+		background-color: #fff;
+
+		&-logo {
+			width: 200px;
+		}
+
+		.hamburger {
+			display: inline-block;
+		}
+	}
+
+	.main-menu {
+		position: fixed;
+		top: 78.13px;
+		left: 0;
+		right: 0;
+		text-align: left;
+		z-index: 98;
+		display: none;
+
+		ul {
+			display: block;
+			height: auto;
+			padding: 15px 0;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
 	.section {
 		&-treatment {
 			.treatment {
@@ -86,7 +129,45 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
+	.main-menu {
+		ul {
+			display: block;
+			height: auto;
+			padding: 15px 0;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
 	.section {
+		&-jensin {
+			&-item {
+				width: 100%;
+			}
+		}
+
+		&-applicant {
+			&-item {
+				width: 100%;
+			}	
+		}
+
+		&-how {	
+			&-row {
+				display: block;
+				&>div {
+					width: 100%;
+				}
+			}
+
+			&-content {
+				min-height: 300px !important;
+				padding: 30px;
+			}
+		}
+
 		&-review {
 			.review {
 				display: block;
@@ -133,7 +214,17 @@
 		width: 100%;
 	}
 
+	.col-xxs-offset-0 {
+		margin-left: 0;
+	}
+
 	.section {
+		&-applicant {
+			&-item {
+				margin-bottom: 50px;
+			}	
+		}
+
 		&-reason {
 			.reason {
 				height: auto;
@@ -144,6 +235,17 @@
 		&-artrit {
 			.section-content ol {
 				margin-left: 0px;
+			}
+		}
+
+		&-doctor {
+			
+			.carousel-doctor {
+				&-item {
+					&:hover {
+						transform: none;
+					}
+				}
 			}
 		}
 
@@ -202,6 +304,15 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+	.main-menu {	
+		&.fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 98;
+		}
+	}
 }
 	/**/
 

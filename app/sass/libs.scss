@@ -1,6 +1,7 @@
 @import "../libs/bootstrap-grid/bootstrap-grid.min";
 @import "../libs/font-awesome/font-awesome.min";
-@import "../libs/owl.carousel/owl.carousel.css";
+@import "../libs/owl.carousel/owl.carousel";
+@import "../libs/css-hamburgers/hamburgers.min";
 
 @font-face {
     font-family: 'FontAwesome';
@@ -11,3 +12,4 @@
          url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
          url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
 }
+

@@ -18,8 +18,7 @@ var gulp           = require('gulp'),
 
 gulp.task('main-js', function() {
     return gulp.src([
-        'app/js/main.js',
-        'app/libs/owl.carousel/owl.carousel.js'
+        'app/js/main.js',        
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify()) // Минифицирует js
@@ -30,6 +29,8 @@ gulp.task('main-js', function() {
 gulp.task('libs-js', function() {
     return gulp.src([
         'app/libs/jquery/jquery.js',
+        'app/libs/owl.carousel/owl.carousel.js',
+        'app/libs/jquery.maskedinput/jquery.maskedinput.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify()) // Минимизировать весь js (на выбор)
