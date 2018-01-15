@@ -21,7 +21,7 @@ gulp.task('main-js', function() {
         'app/js/main.js',        
     ])
     .pipe(concat('main.min.js'))
-    .pipe(uglify()) // Минифицирует js
+    // .pipe(uglify()) // Минифицирует js
     .pipe(gulp.dest('app/js'))
     .pipe(browserSync.reload({stream: true}));
 });
@@ -31,6 +31,7 @@ gulp.task('libs-js', function() {
         'app/libs/jquery/jquery.js',
         'app/libs/owl.carousel/owl.carousel.js',
         'app/libs/jquery.maskedinput/jquery.maskedinput.js',
+        'app/libs/fancybox/jquery.fancybox.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify()) // Минимизировать весь js (на выбор)
@@ -53,7 +54,7 @@ gulp.task('sass', function() {
         .pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix : ''}))
         .pipe(autoprefixer(['last 15 versions']))
-        .pipe(cleanCSS()) // Опционально, закомментировать при отладке
+        // .pipe(cleanCSS()) // Опционально, закомментировать при отладке
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}));
 });
