@@ -626,7 +626,8 @@ body {
   right: 0;
   bottom: 0;
   background-color: #222;
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
   .preloader .fa {
     position: absolute;
     top: 50%;
@@ -822,6 +823,8 @@ ul {
           -ms-flex-align: center;
               align-items: center;
       margin: 0 auto 19px auto; }
+      .section-reason .reason-image:hover {
+        background-color: #c25150; }
     .section-reason .reason-text {
       font-weight: 300;
       color: #646464; }
