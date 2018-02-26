@@ -79,6 +79,10 @@
 			br {
 				display: none;
 			}
+
+			li {
+				margin-bottom: 18px;
+			}
 		}
 	}
 
@@ -216,6 +220,10 @@
 
 	.col-xxs-offset-0 {
 		margin-left: 0;
+	}
+
+	.button {
+		min-width: auto;
 	}
 
 	.section {

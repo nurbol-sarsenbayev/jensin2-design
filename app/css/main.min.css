@@ -411,6 +411,7 @@ img {
   text-align: center; }
 
 .button {
+  min-width: 380px;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   color: #fff;
@@ -723,6 +724,8 @@ ul {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .main-menu li {
+    margin-bottom: 0; }
   .main-menu a {
     color: #fff;
     font-family: Montserrat;
@@ -965,61 +968,59 @@ ul {
       .section-doctor .carousel-doctor-position {
         font-weight: 300;
         color: #923433; }
-  .section-treatment {
-    color: #923433; }
-    .section-treatment .section-content {
-      position: relative;
-      margin-bottom: 44px; }
-    .section-treatment .treatment-step {
-      position: absolute;
-      font-weight: 300;
-      text-align: left;
-      height: 185px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .section-treatment .treatment-step .circle-num {
-        display: none;
-        background-color: #0093d0;
-        color: #fff;
-        width: 50px;
-        height: 50px;
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
-        -webkit-flex-shrink: 0;
-            -ms-flex-negative: 0;
-                flex-shrink: 0;
-        margin-right: 15px;
-        text-align: center;
-        line-height: 50px;
-        font-weight: bold; }
-      .section-treatment .treatment-step:nth-child(2n+1) {
-        left: 760px; }
-      .section-treatment .treatment-step:nth-child(2n) {
-        right: 760px; }
-      .section-treatment .treatment-step:nth-child(2) {
-        top: 111px; }
-      .section-treatment .treatment-step:nth-child(4) {
-        top: 333px; }
-      .section-treatment .treatment-step:nth-child(6) {
-        top: 555px; }
-      .section-treatment .treatment-step:nth-child(8) {
-        top: 777px; }
-      .section-treatment .treatment-step:nth-child(1) {
-        top: 0px; }
-      .section-treatment .treatment-step:nth-child(3) {
-        top: 222px; }
-      .section-treatment .treatment-step:nth-child(5) {
-        top: 444px; }
-      .section-treatment .treatment-step:nth-child(7) {
-        top: 666px; }
-    .section-treatment .bold {
-      margin-bottom: 27px; }
+  .section-treatment .section-content {
+    position: relative;
+    margin-bottom: 44px; }
+  .section-treatment .treatment-step {
+    position: absolute;
+    font-weight: 300;
+    text-align: left;
+    height: 185px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .section-treatment .treatment-step .circle-num {
+      display: none;
+      background-color: #0093d0;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+      margin-right: 15px;
+      text-align: center;
+      line-height: 50px;
+      font-weight: bold; }
+    .section-treatment .treatment-step:nth-child(2n+1) {
+      left: 760px; }
+    .section-treatment .treatment-step:nth-child(2n) {
+      right: 760px; }
+    .section-treatment .treatment-step:nth-child(2) {
+      top: 111px; }
+    .section-treatment .treatment-step:nth-child(4) {
+      top: 333px; }
+    .section-treatment .treatment-step:nth-child(6) {
+      top: 555px; }
+    .section-treatment .treatment-step:nth-child(8) {
+      top: 777px; }
+    .section-treatment .treatment-step:nth-child(1) {
+      top: 0px; }
+    .section-treatment .treatment-step:nth-child(3) {
+      top: 222px; }
+    .section-treatment .treatment-step:nth-child(5) {
+      top: 444px; }
+    .section-treatment .treatment-step:nth-child(7) {
+      top: 666px; }
+  .section-treatment .bold {
+    margin-bottom: 27px; }
   .section-review .review {
     margin-bottom: 100px;
     display: -webkit-box;
@@ -1158,6 +1159,8 @@ ul {
       padding: 15px 0; }
       .main-menu ul br {
         display: none; }
+      .main-menu ul li {
+        margin-bottom: 18px; }
   .section-treatment .treatment-image {
     display: none; }
   .section-treatment .treatment-step {
@@ -1223,6 +1226,8 @@ ul {
     width: 100%; }
   .col-xxs-offset-0 {
     margin-left: 0; }
+  .button {
+    min-width: auto; }
   .section-applicant-item {
     margin-bottom: 50px; }
   .section-reason .reason {

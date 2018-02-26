@@ -128,6 +128,10 @@ ul {
 		align-items: center;
 	}	
 
+	li {
+		margin-bottom: 0;
+	}
+
 	a {
 		color: #fff;
 		font-family: Montserrat;
@@ -464,7 +468,7 @@ ul {
 	}
 
 	&-treatment {
-		color: $accent;
+		// color: $accent;
 
 		.section-content {
 			position: relative;
