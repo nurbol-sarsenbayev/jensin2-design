@@ -53,12 +53,35 @@ img {
 	text-align: center;
 }
 
+.text-left {
+	text-align: left;
+}
+
+.text-gray {
+	font-weight: 500;
+	font-size: 20px;
+	color: #515151;
+
+	.inverse & {
+		color: #b3b0a0;
+	}
+}
+
+.text-green {
+	color: #b3b0a0;
+}
+
+.text-phone {
+	text-decoration: none;
+	white-space: nowrap;
+}
+
 .button {
 	min-width: 380px;
 	// height: 58px;
 	border-radius: 25px;
 	color: #fff;
-	padding: 15px;
+	padding: 19px;
 	background-color: $blue;
 	border: 0;
 	outline: 0;
@@ -101,6 +124,38 @@ img {
 				margin-right: 5px;
 			}
 		}
+
+		&.left {
+			text-align: left;
+			li {
+				position: relative;
+				padding-left: 20px;
+	
+				&:before {
+					content: '•';
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+}
+
+.warning {
+	display: flex;
+	text-align: left;
+
+	&-circle {
+		background-color: #fff;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		margin-right: 35px;
 	}
 }
 
@@ -174,11 +229,14 @@ img {
 }
 
 .input, .textarea {
-	font-size: 18px;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: normal;
 	color: rgb(0, 0, 0);
+	border-radius: 4px;
 	border: 2px solid $blue;
 	outline: 0;
-	padding: 10px 20px;
+	padding: 18px 28px;
 	width: 100%;
 	
 	&.error {
@@ -196,17 +254,17 @@ img {
 	}
 
 	&::-webkit-input-placeholder {
-		color: #666;
+		color: #898989;
 		opacity: 1;
 	}
 	
 	&::-moz-placeholder {
-		color: #666;
+		color: #898989;
 		opacity: 1;
 	}
 	
 	&:-ms-input-placeholder {
-		color: #666;
+		color: #898989;
 		opacity: 1;
 	}
 
@@ -316,4 +374,46 @@ img {
             bottom: -7px;
         }
     }
+}
+
+.circle-item {
+
+	&-image {
+		background-color: $accent;
+		width: 174px;
+		height: 174px;
+		border-radius: 50%;
+		border: 8px solid rgba(255, 255, 255, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 19px auto;
+
+		&:hover {
+			background-color: lighten($accent, 15%);
+		}
+	}
+
+	&-text {
+		font-weight: bold;
+		font-family: Montserrat;
+		color: $light_text_color;
+	}
+
+	&.white {
+		.circle-item {
+			&-image {
+				border-color: #c7a7a3;
+				background-color: #fff;		
+
+				&:hover {
+					background-color: darken(#fff, 15%);
+				}
+			}
+
+			&-text {
+				color: #fff;
+			}
+		}
+	}
 }
