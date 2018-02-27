@@ -71,7 +71,7 @@ gulp.task('imagemin', function() {
 		.pipe(gulp.dest('dist/img')); 
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'libs-js', 'main-js'], function() {
+gulp.task('build', ['removedist', 'sass', 'libs-js', 'main-js'], function() {
 
     var buildFiles = gulp.src([
         'app/*.html',
