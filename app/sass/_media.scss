@@ -268,9 +268,25 @@
 	}
 
 	.section {
+		&-title {
+			font-size: 25px;
+		}
+
 		.circle-item {
 			height: auto;
 			margin-bottom: 30px;
+		}
+
+		&-main {
+			&-title {
+				font-size: 27px;
+			}
+		}
+
+		&-second {
+			.section-title {
+				font-size: 27px;
+			}
 		}
 
 		&-effective {

@@ -1344,9 +1344,15 @@ body {
     margin-left: 0; }
   .button {
     min-width: auto; }
+  .section-title {
+    font-size: 25px; }
   .section .circle-item {
     height: auto;
     margin-bottom: 30px; }
+  .section-main-title {
+    font-size: 27px; }
+  .section-second .section-title {
+    font-size: 27px; }
   .section-effective .effective {
     height: auto;
     margin-bottom: 30px; } }
