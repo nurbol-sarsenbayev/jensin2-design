@@ -132,6 +132,13 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	html, body {
+		font-size: 18px;
+	}
+
+	.button {
+		font-size: 16px;
+	}
 
 	.main-menu {
 		ul {
@@ -146,16 +153,56 @@
 	}
 
 	.section {
+		&-title {
+			font-size: 30px;
+		}
+
+		&-main {
+			&-title {
+				font-size: 35px;
+			}
+
+			&-subtitle {
+				font-size: 20px;
+			}
+		}
+
+		&-second {
+			.section-title {
+				font-size: 30px;
+			}
+		}
+
+		&-chronic {
+			.circle-item {
+				margin-bottom: 30px;
+			}
+
+			.warning {
+				display: block;
+				&-circle {
+					float: left;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		&-effective {
+			.effective {
+				height: 400px;
+			}
+		}
+
+		&-citate {
+			&-text {
+				margin-right: 0;
+			}
+		}
+
 		&-jensin {
 			&-item {
 				width: 100%;
 			}
-		}
-
-		&-applicant {
-			&-item {
-				width: 100%;
-			}	
 		}
 
 		&-how {	
@@ -172,8 +219,13 @@
 			}
 		}
 
-		&-review {
-			.review {
+		&-provodit {
+			&-content {
+				display: block;
+				img {
+					display: block;
+					margin: 0 auto 20px;
+				}
 			}
 		}
 	}
@@ -216,39 +268,15 @@
 	}
 
 	.section {
-		&-applicant {
-			&-item {
-				margin-bottom: 50px;
-			}	
+		.circle-item {
+			height: auto;
+			margin-bottom: 30px;
 		}
 
-		&-reason {
-			.reason {
+		&-effective {
+			.effective {
 				height: auto;
-				margin-bottom: 30px;
-			}
-		}
-
-		&-artrit {
-			.section-content ol {
-				margin-left: 0px;
-			}
-		}
-
-		&-doctor {
-			
-			.carousel-doctor {
-				&-item {
-					&:hover {
-						transform: none;
-					}
-				}
-			}
-		}
-
-		&-review {
-			.review {
-
+				margin-bottom: 30px;				
 			}
 		}
 	}

@@ -61,12 +61,6 @@ body {
 	}
 }
 
-
-ul {
-	font-family: Lato;
-	font-size: 18px;
-}
-
 .bold {
 	font-weight: bold;
 }
@@ -76,6 +70,8 @@ ul {
 }
 
 .header, .footer {
+	font-family: Lato;
+	font-size: 18px;
 	padding: 33px 0;	
 	position: relative;
 
@@ -135,9 +131,7 @@ ul {
 
 	a {
 		color: #fff;
-		font-family: Montserrat;
-		font-size: 20px;
-		font-weight: 500;
+		font-size: 23px;
 		text-decoration: none;
 		
 		&:hover, &.active {
@@ -174,7 +168,7 @@ ul {
 
 	&-title {
 		font-family: Montserrat;
-		font-size: 32px;
+		font-size: 35px;
 		font-weight: bold;
 		color: $accent;
 		margin-bottom: 60px;
@@ -196,27 +190,30 @@ ul {
 
 		&-title {
 			font-family: MontserratAlternates;
-			font-size: 48px;
-			font-weight: normal;
-			margin-bottom: 5px;
+			font-size: 51px;
+			font-weight: 600;
+			margin-bottom: 10px;
 		}
 
 		&-subtitle {
 			font-family: MontserratAlternates;
-			font-size: 24px;
-			font-weight: 500;			
+			font-size: 26px;
+			font-weight: 600;			
 			color: rgba(255, 255, 255, 0.651);
 			margin-bottom: 58px;
 		}
 	}
 
 	&-second {
+		font-family: Lato;
+
 		.section-title {
-			font-size: 42px;
-			font-weight: 500;
+			font-size: 45px;
+			font-weight: 600;
 		}
 
 		.list {
+			font-weight: 500;
 			margin-bottom: 34px;
 		}
 
@@ -224,7 +221,7 @@ ul {
 			margin-bottom: 43px;
 			margin-left: auto;
 			margin-right: auto;
-			max-width: 700px;
+			max-width: 800px;
 		}
 	}
 
@@ -236,25 +233,29 @@ ul {
 
 	&-chronic {
 		background-color: $accent;
+		font-family: Lato;
 
 		.row {
 			margin-top: 50px;
 			margin-bottom: 50px;
 		}
 
-		.list {
+		.list {			
 			margin-top: 15px;
-			color: #b3b0a0;
 
 			li {
 				margin-bottom: 5px;
 			}
 		}
+
+		.warning {
+			font-size: 18px;
+		}
 	}
 
 	&-cases {
 		text-align: left;
-		background-image: url('../img/logo_background_dark.png');
+		background-image: url('../img/logo_background_light.png');
 		background-size: auto;
 
 		&.inverse {
@@ -265,11 +266,9 @@ ul {
 			margin-bottom: 80px;
 		}
 
-		.list {
-			font-size: 20px;			
-		}
-
 		.bold {
+			font-family: Lato;
+			font-size: 18px;
 			margin-top: 40px;
 		}
 	}
@@ -278,13 +277,11 @@ ul {
 
 		&-text {
 			font-weight: 600;
-			font-size: 20px;
 			margin-bottom: 45px;
 		}
 
 		.effective {
 			height: 350px;	
-			font-family: Montserrat;
 
 			&-image {
 				width: 188px;
@@ -296,25 +293,24 @@ ul {
 
 			&-text {
 				font-weight: bold;
-				color: #515151;
+				color: $light_text_color;
+				font-size: 18px;
 			}
 		}
 	}
 
 	&-citate {
 		text-align: left;
-		font-family: Montserrat;
 
 		&-text {
 			font-weight: 600;
-			font-size: 20px;
 			margin-right: 100px;
 			margin-bottom: 20px;
 		}
 
 		&-author {
 			float: right;
-			width: 400px;
+			max-width: 400px;
 			font-weight: normal;
 			font-size: 14px;
 			text-align: right;
@@ -328,7 +324,6 @@ ul {
 	}
 
 	&-jensin {
-		font-family: Montserrat;
 		text-align: left;
 
 		&-item {
@@ -339,12 +334,10 @@ ul {
 		&-title {
 			font-weight: bold;
 			margin-bottom: 20px;
-			font-size: 20px;
 		}
 
 		&-content {
-			color: #b3b0a0;
-			font-weight: 500;
+			color: $green;
 			font-size: 16px;
 		}
 
@@ -358,10 +351,8 @@ ul {
 	}
 
 	&-consult2 {
-		font-family: Montserrat;
-
 		.section-title {
-			color: #515151;
+			color: $light_text_color;
 			margin-bottom: 30px;
 		}
 
@@ -383,8 +374,6 @@ ul {
 	}
 
 	&-provodit {
-		font-size: 20px;
-
 		.section-title {
 			margin-bottom: 10px;
 		}
@@ -410,15 +399,13 @@ ul {
 				}
 			}
 		}
-
 	}
 
 	&-how {
-		font-size: 20px;
 		padding-bottom: 0;
 
 		.section-title {
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 
 		&-row {
@@ -466,7 +453,9 @@ ul {
 
 		.treatment-step {
 			position: absolute;
-			font-weight: 300;
+			font-size: 16px;
+			font-weight: normal;
+			color: $light_text_color;
 			text-align: left;
 			height: 185px;
 			display: flex;
@@ -507,9 +496,8 @@ ul {
 			}
 		}
 
-
-
 		.bold {
+			font-family: Lato;
 			margin-bottom: 27px;
 		}
 	}
@@ -533,7 +521,6 @@ ul {
 			}
 
 			&-title {
-				font-size: 20px;
 				margin-bottom: 20px;
 			}
 
@@ -552,26 +539,85 @@ ul {
 		}
 
 		&-item {
+			position: relative;
 			flex-grow: 1;
 			img {
 				width: 100%;
 				display: block;
+			}
+
+			&:hover {
+				.section-gallery-text {
+					display: flex;
+				}
+			}
+		}
+
+		&-text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 15px;
+			background-color: rgba($accent, 0.8);
+			color: #fff;
+			font-weight: normal;
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		&-link {
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+			color: #fff;
+
+			&:hover {
+				color: darken($color: #fff, $amount: 20%);
 			}
 		}
 	}
 
 	&-question {
 		background-color: $accent;
-		background-image: url('../img/logo-alone.jpg');
-		background-size: auto;
 
 		.qa {
 			text-align: left;
 			margin-bottom: 40px;
 
 			&-title {
+				display: flex;
+				align-items: center;
 				margin-bottom: 20px;
-				font-style: italic;
+				font-weight: 600;
+				user-select: none;
+				cursor: pointer;
+
+				&:before {
+					content: '\f107';
+					font-family: FontAwesome;
+					margin-right: 10px;
+					font-size: 30px;
+					flex-shrink: 0;
+				}
+			}
+
+			&-content {
+				color: $green;
+				padding-left: 30px;
+				display: none;
+			}
+
+			&.active {
+				.qa {
+					&-title {		
+						&:before {
+							content: '\f106';
+						}
+					}
+				}
 			}
 		}
 

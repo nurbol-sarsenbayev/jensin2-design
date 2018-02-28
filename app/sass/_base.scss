@@ -58,12 +58,10 @@ img {
 }
 
 .text-gray {
-	font-weight: 500;
-	font-size: 20px;
-	color: #515151;
+	color: $light_text_color;
 
 	.inverse & {
-		color: #b3b0a0;
+		color: $green;
 	}
 }
 
@@ -77,18 +75,17 @@ img {
 }
 
 .button {
-	min-width: 380px;
-	// height: 58px;
+	min-width: 390px;
 	border-radius: 25px;
 	color: #fff;
-	padding: 19px;
+	padding: 18.5px;
 	background-color: $blue;
 	border: 0;
 	outline: 0;
-	font-size: 18px;
-	font-family: Montserrat;
 	text-transform: uppercase;
+	font-family: Montserrat;
 	font-weight: 500;
+	font-size: 20px;
 	cursor: pointer;
 
 	&:hover {
@@ -96,8 +93,7 @@ img {
 	}
 
 	&-accent {
-		border-radius: 22px;
-		background-color: rgba($accent, 0.7);
+		background-color: rgba($accent, 1);
 	}
 }
 
@@ -119,6 +115,7 @@ img {
 	&-circle {
 		li {
 			&:before {
+				font-family: Lato;
 				display: inline-block;
 				content: '•';
 				margin-right: 5px;
@@ -213,12 +210,6 @@ img {
 		right: 0;
 	}
 
-	&-white {
-		&.border-top:before, &.border-bottom:after {
-			background: url('../img/border-white.png');
-		}
-	}
-
 	&-top:before {
 		top: 0;
 	}
@@ -238,6 +229,7 @@ img {
 	outline: 0;
 	padding: 18px 28px;
 	width: 100%;
+	max-width: 520px;
 	
 	&.error {
 		border-color: red;
@@ -377,6 +369,7 @@ img {
 }
 
 .circle-item {
+	font-size: 18px;
 
 	&-image {
 		background-color: $accent;

@@ -82,7 +82,19 @@ $(function() {
         }
     });
 
-    
+    $(".qa-title").click(function() {
+        var qa = $(this).parent(".qa");
+        var content = $(this).siblings(".qa-content");
+
+        qa.toggleClass("active");
+        console.log('actve', qa.hasClass("active"));
+
+        if(qa.hasClass("active")) { 
+            content.slideDown();
+        } else {
+            content.slideUp();
+        }
+    })
 
     $(".modal-open").click(function() {
         $(".modal").fadeIn(500);
