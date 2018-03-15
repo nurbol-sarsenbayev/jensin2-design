@@ -139,39 +139,22 @@ $(function() {
         }
     });
 
-    $(".carousel-ekskursia").owlCarousel({
+    $(".section-gallery-carousel").owlCarousel({
         items: 1,
-        nav: true,
-        dots: true,
+        nav: false,
+        dots: false,
         loop: true,
         smartSpeed: 500,
         margin: 0,
         autoplay: true,
         autoplayHoverPause: true,
-        autoplayTimeout: 2000,
-        navText: ['', '']
-    });
-
-    $(".carousel-doctor").owlCarousel({
-        items: 3,
-        nav: true,
-        dots: false,
-        loop: true,
-        smartSpeed: 500,
-        margin: 0,
-        // stagePadding: 30,
-        // autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 4000,
         navText: ['', ''],
         responsive: {
             0: { items: 1 },
-            768: { items: 2 },
-            1200: { items: 3 }          
+            479: { items: 2 }
         },
     });
-
-
 
 });
     

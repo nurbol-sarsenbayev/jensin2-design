@@ -228,6 +228,16 @@
 				}
 			}
 		}
+
+		&-gallery {
+			&-content {
+				display: none;
+			}
+
+			&-carousel {
+				display: block !important;
+			}
+		}
 	}
 
 	.owl-carousel {
@@ -294,7 +304,7 @@
 				height: auto;
 				margin-bottom: 30px;				
 			}
-		}
+		}		
 	}
 }
 	/**/
