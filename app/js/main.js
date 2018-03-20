@@ -140,8 +140,8 @@ $(function() {
     });
 
     $(".section-gallery-carousel").owlCarousel({
-        items: 1,
-        nav: false,
+        items: 5,
+        nav: true,
         dots: false,
         loop: true,
         smartSpeed: 500,
@@ -152,7 +152,30 @@ $(function() {
         navText: ['', ''],
         responsive: {
             0: { items: 1 },
-            479: { items: 2 }
+            479: { items: 2 },
+            768: { items: 3 },
+            991: { items: 4 },
+            1199: { items: 5 }
+        },
+    });
+
+    $(".certificate-carousel").owlCarousel({
+        items: 4,
+        nav: true,
+        dots: false,
+        loop: true,
+        smartSpeed: 500,
+        margin: 30,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 4000,
+        navText: ['', ''],
+        responsive: {
+            0: { items: 1 },
+            479: { items: 2 },
+            768: { items: 3 },
+            991: { items: 4 },
+            1199: { margin: 50 }
         },
     });
 

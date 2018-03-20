@@ -411,8 +411,13 @@ img {
 	}
 }
 
+.on-mobile {
+	display: none;
+}
+
 @media (max-width: 550px) {
 	.on-mobile {
+		display: block;
 		background-color: #2DB642;
 		position: fixed;
 		bottom: 0;

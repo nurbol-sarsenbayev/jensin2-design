@@ -533,23 +533,13 @@ body {
 
 	&-gallery {
 
-		&-carousel {
-			display: none !important;
-		}
-
-		&-content {
-			display: flex;
-			flex-wrap: wrap;
-		}
-
 		&-item {
 			position: relative;
 			flex-grow: 1;
-			img {
-				width: 100%;
-				display: block;
-			}
-
+			padding-top: 100%;
+			background-size: ceover;
+			background-position: center center;
+			
 			&:hover {
 				.section-gallery-text {
 					display: flex;
