@@ -89,10 +89,10 @@
 
 				<ul class="list list-circle">
 					<li>Методы традиционной китайской медицины с доказанной эффективностью.</li>
-					<li>Лечение ревматоидного артрита, деформирующего остеоартроза и других суставных заболеваний.</li>
+					<li>У большинства пациентов отмечается выраженный, стойкий положительный эффект.</li>
 					<li>Клиника в Пекине, лучшие врачи.</li>
 					<li>У нас прошли лечение более 165 000 пациентов из разных стран.</li>
-					<li>Традиционные методики + уникальный авторский метод.</li>
+					<li>Комплексное лечение для оздоровления пищеварительной системы и всего организма.</li>
 				</ul>
 				<p class="bold">Получите бесплатную консультацию. Врачи клиники JENSIN оценят вашу ситуацию и составят план лечения:</p>
 				<button class="button modal-open">Получить консультацию</button>
@@ -438,7 +438,7 @@
 
 				<p class="accent">Либо свяжитесь с нами по телефону:</p>
 
-				<a href="tel:87025026285" class="text-phone">8–702-502-62-85</a>
+				<a href="tel:+8617744533052" class="text-phone">+8617744533052</a>
 			</div>
 		</section>
 
@@ -754,9 +754,11 @@
 					<div class="col-sm-7 col-sm-offset-5 col-md-5 col-md-offset-7">
 						<div class="section-zvonok-content">
 							<h4 class="section-zvonok-title">Свяжитесь с нами, и мы обязательно постараемся помочь:</h4>
-							<input type="text" class="input" name="Имя" placeholder="Введите ваше имя">
-							<input type="tel" class="input phone" name="Телефон" placeholder="Введите телефон">
-							<button class="button modal-submit">Получить консультацию</button>	
+							<form action="">
+								<input type="text" class="input" name="Имя" placeholder="Введите ваше имя">
+								<input type="tel" class="input phone" name="Телефон" placeholder="Введите телефон" required>
+								<button class="button form-submit">Получить консультацию</button>		
+							</form>
 						</div>
 					</div>
 				</div>
@@ -788,19 +790,28 @@
 		<div class="modal-content">
 			<i class="modal-close"></i>
 			<h5 class="modal-title">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</h5>
-			<input class="input" type="text" placeholder="Введите имя">
-			<input class="input phone" type="tel" placeholder="Введите телефон*">
-			<span class="error-message">Заполните это поле</span>
-			<input type="button" class="button modal-submit" value="Оставить заявку">				
+			<form>
+				<input class="input" name="Имя" type="text" placeholder="Введите имя">
+				<input class="input phone" name="Телефон" type="tel" placeholder="Введите телефон*" required>
+				<span class="error-message">Заполните это поле</span>
+				<input type="button" class="button form-submit" value="Оставить заявку">	
+			</form>
+		</div>
+	</div>
+
+	<div class="modal" id="thanks">
+		<div class="modal-content">
+			<i class="modal-close"></i>
+			<h4 class="modal-title">Спасибо за заявку. Мы с вами свяжемся.</h4>
 		</div>
 	</div>
 	
 	<div class="on-mobile">
-		<a target="_blank" href="whatsapp://send?phone=+8613810847819&amp;text=Хочу оставить заявку!" transport="WhatsApp">
+		<a target="_blank" href="whatsapp://send?phone=+8617744533052&amp;text=Хочу оставить заявку!" transport="WhatsApp">
 			<i class="fa fa-whatsapp"></i>
 			<span>WhatsApp</span>
 		</a>
-		<a href="tg://resolve?domain=+8613810847819">
+		<a href="tg://resolve?domain=NataliaSunfu">
 			<i class="fa fa-telegram"></i>
 			<span>Telegram</span>
 		</a>

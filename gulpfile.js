@@ -76,6 +76,7 @@ gulp.task('build', ['removedist', 'sass', 'libs-js', 'main-js'], function() {
     var buildFiles = gulp.src([
         'app/*.html',
         'app/.htaccess',
+        'app/*.php'
     ]).pipe(gulp.dest('dist'));
 
     var buildCss = gulp.src([
